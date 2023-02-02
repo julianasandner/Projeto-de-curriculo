@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-principal: #9E7777;
+    --cor-secundaria: #47303a;
+    --cor-terciaria: #F5E8C7;
+    --cor-hover: #DEBA9D;
+    
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-principal);
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 4% 0% 0% 15%;
+}
+
+.cabecalho__nav {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__nav__link {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.apresentacao{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 10%;
+}
+.apresentacao__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 55%;
+}
+
+.apresentacao__conteudo__titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 28px;
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto{
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.apresentacao__links{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao__links__link{
+    background-color: var(--cor-principal);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 10px;
+    color: var(--cor-secundaria);
+    display: flex;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    justify-content: center;
+    gap: 16px;
+    padding: 21.5px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 280px;
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.imagem__pessoal {
+    width: 40%;
+    
+}
+
+.rodape {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-principal);
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 24px;
+    text-align: center;
+}
